@@ -32,6 +32,18 @@ colorscheme murphy
 syntax on
 " Language for chinese, encoding and decoding
 set fileencodings=ucs-dom,utf-8,gbk,latin1
+" set foldmethod
+set fdm=marker
+" zf% match brackets fold
+" zf10G current line to line number 10 fold
+" 5zf current line down to 5 lines fold
+" 5zf- current line up to 5 lines fold
+" zc fold
+" zC fold all
+" zo open fold
+" zO open all fold
+" zE delete all fold
+" zd delete current line fold
 
 " TagList "C+]"--Go to Function Define 
 "         "C+T"--Go to the origin position

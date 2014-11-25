@@ -22,8 +22,9 @@ then
 fi
 
 #installation by some steps
+echo
 echo "Create .vimrc and .vim..."
-echo;echo;
+echo
 sleep 3
 
 (
@@ -32,9 +33,9 @@ cp vimrc $HOME/.vimrc
 cp -r vim $HOME/.vim
 )
 
-echo;echo;
+echo
 echo "Compile ncurses..."
-echo;echo;
+echo
 sleep 3
 tar -xzvf ncurses.tar.gz || (echo "tar -xzvf ncurses.tar.gz err!"; exit 127)
 
@@ -51,9 +52,9 @@ else
 fi
 )
 
-echo;echo;
+echo
 echo "Compile and Install Cscope..."
-echo;echo;
+echo
 sleep 3
 tar -xzvf cscope.tar.gz || (echo "tar -xzvf cscope.tar.gz err!"; exit 127)
 
@@ -73,9 +74,9 @@ else
 fi
 )
 
-echo;echo;
+echo
 echo "Compile and Install Ctags..."
-echo;echo;
+echo
 sleep 3
 tar -xzvf ctags.tar.gz || (echo "tar -xzvf ctags.tar.gz err!"; exit 127)
 
@@ -92,7 +93,7 @@ else
 fi
 )
 
-echo;echo;
+echo
 echo "Set the .bashrc for \$PATH..."
 sleep 3
 
@@ -110,6 +111,6 @@ rm -rf ncurses || (echo "rm -rf ncurses err!"; exit 127)
 rm -rf cscope  || (echo "rm -rf cscope err!"; exit 127)
 rm -rf ctags   || (echo "rm -rf ctags err!"; exit 127)
 
-echo;echo;
+echo
 echo "OK,install successfuly!"
-echo;echo;
+echo
